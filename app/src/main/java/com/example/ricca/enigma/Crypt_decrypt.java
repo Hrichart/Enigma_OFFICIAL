@@ -40,6 +40,11 @@ public class Crypt_decrypt extends AppCompatActivity {
         offset2=selected_letter_2;
         offset3=selected_letter_3;
     }
+    //Per andare alla home
+    public void openHome(View view){
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
     //Per selezionare i rotori
     public void openRotors(View view){
         Intent intent=new Intent(this,Rotors.class);

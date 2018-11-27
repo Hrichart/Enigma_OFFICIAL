@@ -29,6 +29,18 @@
         android:layout_marginTop="60dp"
         android:onClick="openRotors"
         android:text="@string/rotors" /> <!--bottone rotori-->
+    <Button
+        android:id="@+id/rotors_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="506dp"
+        android:layout_marginLeft="506dp"
+        android:layout_marginTop="60dp"
+        android:onClick="openHome"
+        android:text="@string/home" /> <!--bottone home-->
 
     <LinearLayout
         android:layout_width="match_parent"

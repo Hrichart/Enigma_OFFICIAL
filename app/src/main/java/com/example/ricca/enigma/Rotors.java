@@ -36,24 +36,24 @@ public class Rotors extends AppCompatActivity implements AdapterView.OnItemSelec
     private static byte[] selected_rotor_3=new byte[53];
     public static byte[] selected_reflector_1=new byte[26];
 
-    private Spinner spinner1;
-    private Spinner spinner2;
-    private Spinner spinner3;
-    private Spinner spinner4;
-    private Spinner spinner5;
-    private Spinner spinner6;
-    private Spinner spinner7;
+    public static Spinner spinner1;
+    public static Spinner spinner2;
+    public static Spinner spinner3;
+    public static Spinner spinner4;
+    public static Spinner spinner5;
+    public static Spinner spinner6;
+    public static Spinner spinner7;
 
-    private static String ENIGMAPREFERENCES="enigmaprefs";
-    private static String rotor_one="rotor_one_key";
-    private static String rotor_two="rotor_two_key";
-    private static String rotor_three="rotor_three_key";
-    private static String reflector="rotor_four_key";
-    private static String letter_one="letter_one_key";
-    private static String letter_two="letter_two_key";
-    private static String letter_three="letter_three_key";
+    public static String ENIGMAPREFERENCES="enigmaprefs";
+    public static String rotor_one="rotor_one_key";
+    public static String rotor_two="rotor_two_key";
+    public static String rotor_three="rotor_three_key";
+    public static String reflector="rotor_four_key";
+    public static String letter_one="letter_one_key";
+    public static String letter_two="letter_two_key";
+    public static String letter_three="letter_three_key";
 
-    SharedPreferences enigma_preferences;
+    public static SharedPreferences enigma_preferences;
 
     byte rotor1;
     byte rotor2;
@@ -136,19 +136,19 @@ public class Rotors extends AppCompatActivity implements AdapterView.OnItemSelec
             case R.id.spinner1:
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor I"))
-                    {System.arraycopy(rotorI, 0, selected_rotor_1, 0, 53); rotor1=0;}}
+                    {System.arraycopy(rotorI, 0, selected_rotor_1, 0, 53); rotor1=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor II"))
-                    {System.arraycopy(rotorII, 0, selected_rotor_1, 0, 53); rotor1=1;}}
+                    {System.arraycopy(rotorII, 0, selected_rotor_1, 0, 53); rotor1=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor III"))
-                    {System.arraycopy(rotorIII, 0, selected_rotor_1, 0, 53); rotor1=2;}}
+                    {System.arraycopy(rotorIII, 0, selected_rotor_1, 0, 53); rotor1=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor IV"))
-                    {System.arraycopy(rotorIV, 0, selected_rotor_1, 0, 53); rotor1=3;}}
+                    {System.arraycopy(rotorIV, 0, selected_rotor_1, 0, 53); rotor1=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor V"))
-                    {System.arraycopy(rotorV, 0, selected_rotor_1, 0, 53); rotor1=4;}}
+                    {System.arraycopy(rotorV, 0, selected_rotor_1, 0, 53); rotor1=(byte)position;}}
                     /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor VI"))
                         System.arraycopy(rotorVI, 0, selected_rotor_1, 0, 52); }
@@ -161,20 +161,20 @@ public class Rotors extends AppCompatActivity implements AdapterView.OnItemSelec
                 break;
             case R.id.spinner2:
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                    if (Objects.equals(text, "Rotor V"))
-                    {System.arraycopy(rotorV, 0, selected_rotor_2, 0, 53); rotor2=0;}}
+                    if (Objects.equals(text, "Rotor I"))
+                    {System.arraycopy(rotorV, 0, selected_rotor_2, 0, 53); rotor2=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor II"))
-                    {System.arraycopy(rotorII, 0, selected_rotor_2, 0, 53); rotor2=1;}}
+                    {System.arraycopy(rotorII, 0, selected_rotor_2, 0, 53); rotor2=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor III"))
-                    {System.arraycopy(rotorIII, 0, selected_rotor_2, 0, 53); rotor2=2;}}
+                    {System.arraycopy(rotorIII, 0, selected_rotor_2, 0, 53); rotor2=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor IV"))
-                    {System.arraycopy(rotorIV, 0, selected_rotor_2, 0, 53); rotor2=3;}}
+                    {System.arraycopy(rotorIV, 0, selected_rotor_2, 0, 53); rotor2=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor V"))
-                    {System.arraycopy(rotorV, 0, selected_rotor_2, 0, 53); rotor2=4;}}
+                    {System.arraycopy(rotorV, 0, selected_rotor_2, 0, 53); rotor2=(byte)position;}}
                 /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor VI"))
                         System.arraycopy(rotorVI, 0, selected_rotor_2, 0, 52); }
@@ -188,19 +188,19 @@ public class Rotors extends AppCompatActivity implements AdapterView.OnItemSelec
             case R.id.spinner3:
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor I"))
-                    {System.arraycopy(rotorI, 0, selected_rotor_3, 0, 53); rotor3=0;}}
+                    {System.arraycopy(rotorI, 0, selected_rotor_3, 0, 53); rotor3=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor II"))
-                    {System.arraycopy(rotorII, 0, selected_rotor_3, 0, 53); rotor3=1;}}
+                    {System.arraycopy(rotorII, 0, selected_rotor_3, 0, 53); rotor3=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor III"))
-                    {System.arraycopy(rotorIII, 0, selected_rotor_3, 0, 53); rotor3=2;}}
+                    {System.arraycopy(rotorIII, 0, selected_rotor_3, 0, 53); rotor3=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor IV"))
-                    {System.arraycopy(rotorIV, 0, selected_rotor_3, 0, 53); rotor3=3;}}
+                    {System.arraycopy(rotorIV, 0, selected_rotor_3, 0, 53); rotor3=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor V"))
-                    {System.arraycopy(rotorV, 0, selected_rotor_3, 0, 53); rotor3=4;}}
+                    {System.arraycopy(rotorV, 0, selected_rotor_3, 0, 53); rotor3=(byte)position;}}
                /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Rotor VI"))
                         System.arraycopy(rotorVI, 0, selected_rotor_3, 0, 52); }
@@ -214,13 +214,13 @@ public class Rotors extends AppCompatActivity implements AdapterView.OnItemSelec
             case R.id.spinner4:
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if(Objects.equals(text, "Reflector A"))
-                    {System.arraycopy(reflectorA,0, selected_reflector_1,0,26); reflector1=0;}}
+                    {System.arraycopy(reflectorA,0, selected_reflector_1,0,26); reflector1=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Reflector B"))
-                    {System.arraycopy(reflectorB,0, selected_reflector_1,0,26); reflector1=1;}}
+                    {System.arraycopy(reflectorB,0, selected_reflector_1,0,26); reflector1=(byte)position;}}
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (Objects.equals(text, "Reflector C"))
-                    {System.arraycopy(reflectorC,0, selected_reflector_1,0,26); reflector1=2;}}
+                    {System.arraycopy(reflectorC,0, selected_reflector_1,0,26); reflector1=(byte)position;}}
                 break;
 
 
