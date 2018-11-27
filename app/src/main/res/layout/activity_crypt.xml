@@ -60,80 +60,70 @@
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/Q"
-            tools:ignore="ButtonStyle" /> <!--Q-->
+            android:text="@string/Q"/> <!--Q-->
         <Button
             android:id="@+id/bttW"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/W"
-            tools:ignore="ButtonStyle" /> <!--W-->
+            android:text="@string/W"/> <!--W-->
         <Button
             android:id="@+id/bttE"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/E"
-            tools:ignore="ButtonStyle" /> <!--E-->
+            android:text="@string/E"/> <!--E-->
         <Button
             android:id="@+id/bttR"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/R"
-            tools:ignore="ButtonStyle" /> <!--R-->
+            android:text="@string/R"/> <!--R-->
         <Button
             android:id="@+id/bttT"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/T"
-            tools:ignore="ButtonStyle" /> <!--T-->
+            android:text="@string/T" /> <!--T-->
         <Button
             android:id="@+id/bttY"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/Y"
-            tools:ignore="ButtonStyle" /> <!--Y-->
+            android:text="@string/Y"/> <!--Y-->
         <Button
             android:id="@+id/bttU"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/U"
-            tools:ignore="ButtonStyle" /> <!--U-->
+            android:text="@string/U" /> <!--U-->
         <Button
             android:id="@+id/bttI"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/I"
-            tools:ignore="ButtonStyle" /> <!--I-->
+            android:text="@string/I"/> <!--I-->
         <Button
             android:id="@+id/bttO"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/O"
-            tools:ignore="ButtonStyle" /> <!--O-->
+            android:text="@string/O"/> <!--O-->
         <Button
             android:id="@+id/bttP"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/P"
-            tools:ignore="ButtonStyle" /> <!--P-->
+            android:text="@string/P"/> <!--P-->
     </LinearLayout>
 
     <LinearLayout
