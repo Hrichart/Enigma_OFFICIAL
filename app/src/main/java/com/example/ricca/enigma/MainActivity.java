@@ -30,13 +30,6 @@ public class MainActivity extends AppCompatActivity {
        editor.putInt("letter_two_key",0);
        editor.putInt("letter_three_key",0);
        editor.commit();
-       Rotors.spinner1.setSelection(Rotors.enigma_preferences.getInt("rotor_one_key",0));
-       Rotors.spinner2.setSelection(Rotors.enigma_preferences.getInt("rotor_two_key",0));
-       Rotors.spinner3.setSelection(Rotors.enigma_preferences.getInt("rotor_three_key",0));
-       Rotors.spinner4.setSelection(Rotors.enigma_preferences.getInt("rotor_four_key",0));
-       Rotors.spinner5.setSelection(Rotors.enigma_preferences.getInt("letter_one_key",0));
-       Rotors.spinner6.setSelection(Rotors.enigma_preferences.getInt("letter_two_key",0));
-       Rotors.spinner7.setSelection(Rotors.enigma_preferences.getInt("letter_three_key",0));
        Intent intent = new Intent(this, Crypt_decrypt.class);
        startActivity(intent);
    }
