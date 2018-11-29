@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Crypt_decrypt"
-    android:background="@drawable/tastiera_enigma">
+    tools:context=".Crypt_decrypt">
 
     <Switch
         android:id="@+id/cr_decr_sw"
@@ -49,20 +48,13 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="265dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/bttQ"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="0dp"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/Q" /> <!--Q-->
@@ -70,11 +62,6 @@
                 android:id="@+id/bttW"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="43dp"
-                android:layout_marginLeft="43dp"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/W" /> <!--W-->
@@ -82,11 +69,6 @@
                 android:id="@+id/bttE"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="85dp"
-                android:layout_marginLeft="85dp"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/E" /> <!--E-->
@@ -94,8 +76,6 @@
                 android:id="@+id/bttR"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentTop="true"
-                android:layout_toStartOf="@+id/bttT"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/R" /> <!--R-->
@@ -103,9 +83,6 @@
                 android:id="@+id/bttT"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:layout_toStartOf="@+id/bttZ"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/T" /> <!--T-->
@@ -113,11 +90,6 @@
                 android:id="@+id/bttZ"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="119dp"
-                android:layout_marginRight="119dp"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/Z" /> <!--Z-->
@@ -125,11 +97,6 @@
                 android:id="@+id/bttU"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="77dp"
-                android:layout_marginRight="77dp"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/U" /> <!--U-->
@@ -137,8 +104,6 @@
                 android:id="@+id/bttI"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentTop="true"
-                android:layout_toStartOf="@+id/bttO"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/I" /> <!--I-->
@@ -146,16 +111,9 @@
                 android:id="@+id/bttO"
                 android:layout_width="@dimen/std"
                 android:layout_height="@dimen/std"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
                 android:background="@drawable/round_shape"
                 android:onClick="openEnigma"
                 android:text="@string/O" /> <!--O-->
-        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout

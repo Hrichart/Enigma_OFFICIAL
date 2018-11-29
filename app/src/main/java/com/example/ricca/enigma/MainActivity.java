@@ -2,11 +2,15 @@ package com.example.ricca.enigma;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import android.content.Intent;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +19,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final VideoView videoview=findViewById(R.id.videoView);
+        final TextView welcome_text=findViewById(R.id.welcome);
+        final Button start_cr=findViewById(R.id.start);
+        if(Crypt_decrypt.first_access){
+            welcome_text.setVisibility(View.VISIBLE);
+            start_cr.setVisibility(View.VISIBLE);
+            videoview.setVisibility(View.INVISIBLE);}
+        if(!Crypt_decrypt.first_access) {
+            videoview.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.enigma_entry));
+            videoview.start();
+            Crypt_decrypt.first_access = true;
+        }
+        videoview.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                welcome_text.setVisibility(View.VISIBLE);
+                start_cr.setVisibility(View.VISIBLE);
+                videoview.setVisibility(View.INVISIBLE);
+            }
+        });
 
     }
 

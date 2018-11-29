@@ -15,6 +15,7 @@ import org.w3c.dom.Text;
 
 public class Crypt_decrypt extends AppCompatActivity {
 
+    public static boolean first_access=false;
     private Switch cr_decr_switch;
     private static final char[] letters=new char[] {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
     public static byte[] selected_rotor_1=new byte[53];
