@@ -154,63 +154,72 @@
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/A" /> <!--A-->
+            android:text="@string/A"
+            tools:ignore="ButtonStyle" /> <!--A-->
         <Button
             android:id="@+id/bttS"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/S" /> <!--S-->
+            android:text="@string/S"
+            tools:ignore="ButtonStyle" /> <!--S-->
         <Button
             android:id="@+id/bttD"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/D" /> <!--D-->
+            android:text="@string/D"
+            tools:ignore="ButtonStyle" /> <!--D-->
         <Button
             android:id="@+id/bttF"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/F" /> <!--F-->
+            android:text="@string/F"
+            tools:ignore="ButtonStyle" /> <!--F-->
         <Button
             android:id="@+id/bttG"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/G" /> <!--G-->
+            android:text="@string/G"
+            tools:ignore="ButtonStyle" /> <!--G-->
         <Button
             android:id="@+id/bttH"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/H" /> <!--H-->
+            android:text="@string/H"
+            tools:ignore="ButtonStyle" /> <!--H-->
         <Button
             android:id="@+id/bttJ"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/J" /> <!--J-->
+            android:text="@string/J"
+            tools:ignore="ButtonStyle" /> <!--J-->
         <Button
             android:id="@+id/bttK"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/K" /> <!--K-->
+            android:text="@string/K"
+            tools:ignore="ButtonStyle" /> <!--K-->
         <Button
             android:id="@+id/bttL"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/L" /> <!--L-->
+            android:text="@string/L"
+            tools:ignore="ButtonStyle" /> <!--L-->
     </LinearLayout>
 
     <LinearLayout
@@ -231,58 +240,65 @@
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/Z" /> <!--Z-->
+            android:text="@string/Z"
+            tools:ignore="ButtonStyle" /> <!--Z-->
         <Button
             android:id="@+id/bttX"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/X" /> <!--X-->
+            android:text="@string/X"
+            tools:ignore="ButtonStyle" /> <!--X-->
         <Button
             android:id="@+id/bttC"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/C" /> <!--C-->
+            android:text="@string/C"
+            tools:ignore="ButtonStyle" /> <!--C-->
         <Button
             android:id="@+id/bttV"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/V" /> <!--V-->
+            android:text="@string/V"
+            tools:ignore="ButtonStyle" /> <!--V-->
         <Button
             android:id="@+id/bttB"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/B" /> <!--B-->
+            android:text="@string/B"
+            tools:ignore="ButtonStyle" /> <!--B-->
         <Button
             android:id="@+id/bttN"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/N" /> <!--N-->
+            android:text="@string/N"
+            tools:ignore="ButtonStyle" /> <!--N-->
         <Button
             android:id="@+id/bttM"
             android:layout_width="@dimen/std"
             android:layout_height="@dimen/std"
             android:background="@drawable/round_shape"
             android:onClick="openEnigma"
-            android:text="@string/M" /> <!--M-->
+            android:text="@string/M"
+            tools:ignore="ButtonStyle" /> <!--M-->
     </LinearLayout>
 
-    <EditText
+    <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:hint="Result" />
+        android:hint="Result"/>
 
 </RelativeLayout>

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
@@ -29,7 +30,7 @@ public class Crypt_decrypt extends AppCompatActivity {
     private static int offset2;
     private static int offset3;
 
-    private  EditText result;
+    private TextView result;
 
 
     @Override
